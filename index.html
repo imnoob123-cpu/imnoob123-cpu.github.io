@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>imnoob123 // inequalities</title>
+  <meta name="description" content="Inequality notes and problems by imnoob123.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <span class="brand-mark">∴</span>
+      <span class="rainbow-text" data-rainbow>imnoob123</span>
+    </a>
+
+    <nav>
+      <a href="#notes">notes</a>
+      <a href="#problems">problems</a>
+      <a href="#theorems">theorems</a>
+      <a href="#about">about</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">inequalities / notes / problems</p>
+        <h1><span class="rainbow-text" data-rainbow>inequalities</span></h1>
+        <p class="lede">that's pretty much the whole site lmao</p>
+
+        <div class="hero-actions">
+          <a class="btn rainbow-border" href="#notes">notes</a>
+          <a class="btn" href="#problems">problems</a>
+        </div>
+      </div>
+
+      <div class="hero-math">
+        <div class="math-line">a² + b² ≥ 2ab</div>
+        <div class="math-line">∑a² ≥ (∑a)²/n</div>
+        <div class="math-line">x/y + y/x ≥ 2</div>
+        <div class="math-line tiny-math">you know the drill.</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>AM-GM</span>
+        <span>C-S</span>
+        <span>JENSEN</span>
+        <span>UV W</span>
+        <span>SOS</span>
+        <span>SCHUR</span>
+        <span>pqr</span>
+        <span>RAVI</span>
+        <span>FACTORIZATION</span>
+        <span>AM-GM</span>
+        <span>C-S</span>
+      </div>
+    </section>
+
+    <section class="content-grid" id="notes">
+      <div class="main-column">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">notes</p>
+            <h2>some stuff</h2>
+          </div>
+          <span class="tiny">short > unnecessarily long</span>
+        </div>
+
+        <article class="post rainbow-border">
+          <div class="post-meta"><span>01</span><span>AM-GM</span></div>
+          <h3><span class="rainbow-text" data-rainbow>try the obvious thing first</span></h3>
+          <p>
+            If a positive-variable inequality has x/y and y/x sitting next to
+            each other, don't invent a new branch of mathematics.
+          </p>
+          <div class="formula">x/y + y/x ≥ 2</div>
+          <p class="afterthought">AM-GM. done.</p>
+        </article>
+
+        <article class="post rainbow-border">
+          <div class="post-meta"><span>02</span><span>Cauchy</span></div>
+          <h3><span class="rainbow-text" data-rainbow>Engel form is actually useful</span></h3>
+          <p>
+            The one with Σx²/y. I keep forgetting to check for it, so here it
+            is, on the website, where I can't pretend I forgot.
+          </p>
+          <div class="formula">
+            Σ(xᵢ² / yᵢ) ≥ (x₁ + ⋯ + xₙ)² / (y₁ + ⋯ + yₙ)
+          </div>
+        </article>
+
+        <article class="post rainbow-border">
+          <div class="post-meta"><span>03</span><span>SOS</span></div>
+          <h3><span class="rainbow-text" data-rainbow>subtract first</span></h3>
+          <p>
+            A lot of the time the inequality is easier to see after moving
+            everything to one side.
+          </p>
+          <div class="formula">(a-b)² + (b-c)² + (c-a)² ≥ 0</div>
+        </article>
+      </div>
+
+      <aside class="sidebar">
+        <div class="side-card rainbow-border">
+          <p class="eyebrow">status</p>
+          <div class="status-line"><span class="dot"></span> doing math</div>
+          <p class="side-copy">that's it</p>
+        </div>
+
+        <div class="side-card rainbow-border">
+          <p class="eyebrow">usual suspects</p>
+          <div class="chips">
+            <span>AM-GM</span><span>C-S</span><span>Jensen</span>
+            <span>uvw</span><span>SOS</span><span>Schur</span>
+            <span>pqr</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-block" id="theorems">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">theorems</p>
+          <h2>leave these here</h2>
+        </div>
+      </div>
+
+      <div class="theorem-grid">
+        <article class="theorem rainbow-border">
+          <h3>Cauchy-Schwarz</h3>
+          <div class="formula">(\sum aᵢ²)(\sum bᵢ²) ≥ (\sum aᵢbᵢ)²</div>
+          <p>Useful when the expression looks like it wants a square.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>AM-GM</h3>
+          <div class="formula">
+            (x₁+⋯+xₙ)/n ≥ ⁿ√(x₁⋯xₙ)
+          </div>
+          <p>For positive xᵢ.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>Schur</h3>
+          <div class="formula">
+            ∑a(a-b)(a-c) ≥ 0
+          </div>
+          <p>For a,b,c ≥ 0.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>Jensen</h3>
+          <div class="formula">
+            f(∑λᵢxᵢ) ≤ ∑λᵢf(xᵢ)
+          </div>
+          <p>For convex f and λᵢ ≥ 0, ∑λᵢ = 1.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>Nesbitt</h3>
+          <div class="formula">
+            Σ a/(b+c) ≥ 3/2
+          </div>
+          <p>For positive a,b,c.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>uvw</h3>
+          <div class="formula">u = a+b+c, v = ab+bc+ca, w = abc</div>
+          <p>Not a theorem by itself. Just a useful way to stop drowning in variables.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="problem-section" id="problems">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">problems</p>
+          <h2>good luck lmao</h2>
+        </div>
+        <span class="tiny">no solutions here. obviously.</span>
+      </div>
+
+      <div class="problem-grid">
+        <article class="problem rainbow-border">
+          <span class="problem-num">01 · hard</span>
+          <p>For positive a,b,c, prove</p>
+          <div class="formula big">
+            Σ a/(b+c) ≥ 3/2
+          </div>
+          <p class="problem-note">Equality?</p>
+        </article>
+
+        <article class="problem rainbow-border">
+          <span class="problem-num">02 · harder</span>
+          <p>For positive a,b,c with a+b+c=1, prove</p>
+          <div class="formula big">
+            1/(1+a²) + 1/(1+b²) + 1/(1+c²) ≥ 9/4
+          </div>
+          <p class="problem-note">Don't rush.</p>
+        </article>
+
+        <article class="problem rainbow-border">
+          <span class="problem-num">03 · actually mean</span>
+          <p>For x,y,z &gt; 0, prove</p>
+          <div class="formula big">
+            (x+y+z)² ≥ 3(xy+yz+zx)
+          </div>
+          <p class="problem-note">Find the cleanest proof you can.</p>
+        </article>
+
+        <article class="problem rainbow-border featured-problem">
+          <span class="problem-num">04 · shortlist</span>
+          <p>
+            Let a,b,c be the sides of a triangle. Prove
+          </p>
+          <div class="formula big">
+            √(b+c-a)/√a
+            + √(c+a-b)/√b
+            + √(a+b-c)/√c
+            ≤ 3
+          </div>
+          <p class="problem-note">This one is from the 2006 IMO shortlist.</p>
+        </article>
+
+        <article class="problem rainbow-border featured-problem">
+          <span class="problem-num">05 · functional</span>
+          <p>
+            Find all f:(0,∞)→(0,∞) satisfying
+          </p>
+          <div class="formula big">
+            x(f(x)+f(y)) ≥ (f(f(x))+y)f(y)
+          </div>
+          <p class="problem-note">There is a clean answer. Good luck.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">about</p>
+        <h2><span class="rainbow-text" data-rainbow>imnoob123</span></h2>
+      </div>
+
+      <p>
+        I'm a student. I like inequalities. I put the stuff I find useful here.
+        That's basically the site.
+      </p>
+
+      <div class="signature">
+        <span class="rainbow-text" data-rainbow>∴ your turn.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 imnoob123</span>
+    <span>/</span>
+    <span class="rainbow-text" data-rainbow>keep the proof short</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
