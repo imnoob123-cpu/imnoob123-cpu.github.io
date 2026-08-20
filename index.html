@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>imnoob123 // inequalities</title>
+  <meta name="description" content="Inequality notes and problems by imnoob123.">
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)']],
+        displayMath: [['\\[', '\\]']]
+      },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top">
+      <span class="brand-mark">∴</span>
+      <span class="rainbow-text" data-rainbow>imnoob123</span>
+    </a>
+
+    <nav>
+      <a href="#notes">notes</a>
+      <a href="#problems">problems</a>
+      <a href="#theorems">theorems</a>
+      <a href="#about">about</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">inequalities / notes / problems</p>
+        <h1><span class="rainbow-text" data-rainbow>inequalities</span></h1>
+        <p class="lede">that's pretty much the whole site lmao</p>
+
+        <div class="hero-actions">
+          <a class="btn rainbow-border" href="#notes">notes</a>
+          <a class="btn" href="#problems">problems</a>
+        </div>
+      </div>
+
+      <div class="hero-math">
+        <div class="math-line">a² + b² ≥ 2ab</div>
+        <div class="math-line">∑a² ≥ (∑a)²/n</div>
+        <div class="math-line">x/y + y/x ≥ 2</div>
+        <div class="math-line tiny-math">you know the drill.</div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>AM-GM</span>
+        <span>C-S</span>
+        <span>JENSEN</span>
+        <span>UV W</span>
+        <span>SOS</span>
+        <span>SCHUR</span>
+        <span>pqr</span>
+        <span>RAVI</span>
+        <span>FACTORIZATION</span>
+        <span>AM-GM</span>
+        <span>C-S</span>
+      </div>
+    </section>
+
+    <section class="content-grid" id="notes">
+      <div class="main-column">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">notes</p>
+            <h2>some stuff</h2>
+          </div>
+          <span class="tiny">short > unnecessarily long</span>
+        </div>
+
+        <article class="post rainbow-border">
+          <div class="post-meta"><span>01</span><span>AM-GM</span></div>
+          <h3><span class="rainbow-text" data-rainbow>try the obvious thing first</span></h3>
+          <p>
+            If a positive-variable inequality has x/y and y/x sitting next to
+            each other, don't invent a new branch of mathematics.
+          </p>
+          <div class="formula">x/y + y/x ≥ 2</div>
+          <p class="afterthought">AM-GM. done.</p>
+        </article>
+
+        <article class="post rainbow-border">
+          <div class="post-meta"><span>02</span><span>Cauchy</span></div>
+          <h3><span class="rainbow-text" data-rainbow>Engel form is actually useful</span></h3>
+          <p>
+            The one with Σx²/y. I keep forgetting to check for it, so here it
+            is, on the website, where I can't pretend I forgot.
+          </p>
+          <div class="formula">
+            Σ(xᵢ² / yᵢ) ≥ (x₁ + ⋯ + xₙ)² / (y₁ + ⋯ + yₙ)
+          </div>
+        </article>
+
+        <article class="post rainbow-border">
+          <div class="post-meta"><span>03</span><span>SOS</span></div>
+          <h3><span class="rainbow-text" data-rainbow>subtract first</span></h3>
+          <p>
+            A lot of the time the inequality is easier to see after moving
+            everything to one side.
+          </p>
+          <div class="formula">(a-b)² + (b-c)² + (c-a)² ≥ 0</div>
+        </article>
+      </div>
+
+      <aside class="sidebar">
+        <div class="side-card rainbow-border">
+          <p class="eyebrow">status</p>
+          <div class="status-line"><span class="dot"></span> doing math</div>
+          <p class="side-copy">that's it</p>
+        </div>
+
+        <div class="side-card rainbow-border">
+          <p class="eyebrow">usual suspects</p>
+          <div class="chips">
+            <span>AM-GM</span><span>C-S</span><span>Jensen</span>
+            <span>uvw</span><span>SOS</span><span>Schur</span>
+            <span>pqr</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section-block" id="theorems">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">theorems</p>
+          <h2>leave these here</h2>
+        </div>
+      </div>
+
+      <div class="theorem-grid">
+        <article class="theorem rainbow-border">
+          <h3>Cauchy-Schwarz</h3>
+          <div class="formula">(\sum aᵢ²)(\sum bᵢ²) ≥ (\sum aᵢbᵢ)²</div>
+          <p>Useful when the expression looks like it wants a square.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>AM-GM</h3>
+          <div class="formula">
+            (x₁+⋯+xₙ)/n ≥ ⁿ√(x₁⋯xₙ)
+          </div>
+          <p>For positive xᵢ.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>Schur</h3>
+          <div class="formula">
+            ∑a(a-b)(a-c) ≥ 0
+          </div>
+          <p>For a,b,c ≥ 0.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>Jensen</h3>
+          <div class="formula">
+            f(∑λᵢxᵢ) ≤ ∑λᵢf(xᵢ)
+          </div>
+          <p>For convex f and λᵢ ≥ 0, ∑λᵢ = 1.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>Nesbitt</h3>
+          <div class="formula">
+            Σ a/(b+c) ≥ 3/2
+          </div>
+          <p>For positive a,b,c.</p>
+        </article>
+
+        <article class="theorem rainbow-border">
+          <h3>uvw</h3>
+          <div class="formula">u = a+b+c, v = ab+bc+ca, w = abc</div>
+          <p>Not a theorem by itself. Just a useful way to stop drowning in variables.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="problem-section" id="problems">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">problems</p>
+          <h2>good luck lmao</h2>
+        </div>
+        <span class="tiny">no solutions here. obviously.</span>
+      </div>
+
+      <div class="problem-grid">
+        <article class="problem rainbow-border">
+          <span class="problem-num">01 · hard</span>
+          <p>For positive a,b,c, prove</p>
+          <div class="formula big">
+            Σ a/(b+c) ≥ 3/2
+          </div>
+          <p class="problem-note">Equality?</p>
+        </article>
+
+        <article class="problem rainbow-border">
+          <span class="problem-num">02 · harder</span>
+          <p>For positive a,b,c with a+b+c=1, prove</p>
+          <div class="formula big">
+            1/(1+a²) + 1/(1+b²) + 1/(1+c²) ≥ 9/4
+          </div>
+          <p class="problem-note">Don't rush.</p>
+        </article>
+
+        <article class="problem rainbow-border">
+          <span class="problem-num">03 · actually mean</span>
+          <p>For x,y,z &gt; 0, prove</p>
+          <div class="formula big">
+            (x+y+z)² ≥ 3(xy+yz+zx)
+          </div>
+          <p class="problem-note">Find the cleanest proof you can.</p>
+        </article>
+
+        <article class="problem rainbow-border featured-problem">
+          <span class="problem-num">04 · shortlist</span>
+          <p>
+            Let a,b,c be the sides of a triangle. Prove
+          </p>
+          <div class="formula big">
+            √(b+c-a)/√a
+            + √(c+a-b)/√b
+            + √(a+b-c)/√c
+            ≤ 3
+          </div>
+          <p class="problem-note">This one is from the 2006 IMO shortlist.</p>
+        </article>
+
+        <article class="problem rainbow-border featured-problem">
+          <span class="problem-num">05 · functional</span>
+          <p>
+            Find all f:(0,∞)→(0,∞) satisfying
+          </p>
+          <div class="formula big">
+            x(f(x)+f(y)) ≥ (f(f(x))+y)f(y)
+          </div>
+          <p class="problem-note">There is a clean answer. Good luck.</p>
+        </article>
+
+        <article class="problem rainbow-border proposed-problem">
+          <span class="problem-num">06 · mine</span>
+          <p>\(a,b,c&gt;0\), and</p>
+          <div class="formula big">
+            \[
+              abc(b-c)^2(a-c)^2=3
+            \]
+          </div>
+          <p>Prove</p>
+          <div class="formula big">
+            \[
+              a+b+c&gt;2\sqrt2.
+            \]
+          </div>
+        </article>
+
+        <article class="problem rainbow-border proposed-problem">
+          <span class="problem-num">07 · mine</span>
+          <p>\(a,b,c&gt;0\), and</p>
+          <div class="formula big">
+            \[
+              \sum_{\mathrm{cyc}} a^2&lt;\sqrt3.
+            \]
+          </div>
+          <p>Prove</p>
+          <div class="formula big">
+            \[
+            \begin{aligned}
+            \sqrt{\sum_{\mathrm{cyc}}ab+abc}
+            &amp;&lt;
+            \sum_{\mathrm{cyc}}\frac{a}{\sqrt{b^2+c+1}}\\
+            &amp;&lt;
+            \sum_{\mathrm{cyc}}ab^2+\frac1{\sqrt[3]{abc}}.
+            \end{aligned}
+            \]
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="theory-section" id="theory">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">theory</p>
+          <h2>toolbox</h2>
+        </div>
+        <span class="tiny">keep this</span>
+      </div>
+
+      <div class="theory-intro rainbow-border">
+        <p>
+          Things I use when I'm stuck.
+        </p>
+      </div>
+
+      <div class="doc-list">
+
+        <article class="doc rainbow-border" id="doc-amgm">
+          <div class="doc-tag">01 · basics</div>
+          <h3>AM-GM</h3>
+          <p>For positive x₁,…,xₙ,</p>
+          <div class="formula big">
+            (x₁+⋯+xₙ)/n ≥ ⁿ√(x₁x₂⋯xₙ).
+          </div>
+          <p>
+            Equality holds when x₁=⋯=xₙ.
+          </p>
+          <h4>look for</h4>
+          <ul>
+            <li>Products need to become sums.</li>
+            <li>Reciprocals occur in pairs.</li>
+            <li>Roots appear naturally.</li>
+            <li>The equality case is probably “all equal.”</li>
+          </ul>
+          <div class="formula">
+            x/y + y/x ≥ 2√((x/y)(y/x)) = 2.
+          </div>
+          <p class="afterthought">
+            try this first.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-cauchy">
+          <div class="doc-tag">02 · cauchy</div>
+          <h3>Cauchy-Schwarz</h3>
+          <p>The standard form is</p>
+          <div class="formula big">
+            (∑aᵢ²)(∑bᵢ²) ≥ (∑aᵢbᵢ)².
+          </div>
+          <p>
+            In inequalities, Engel form is usually the version I want to remember:
+          </p>
+          <div class="formula">
+            ∑(xᵢ²/yᵢ) ≥ (∑xᵢ)²/(∑yᵢ), &nbsp; yᵢ &gt; 0.
+          </div>
+          <h4>Typical moves</h4>
+          <ul>
+            <li>Turn a sum of fractions into one fraction.</li>
+            <li>Create a square of the numerator.</li>
+            <li>Use √(ab) or √x terms as the xᵢ.</li>
+          </ul>
+          <div class="formula">
+            Σ a²/(b+c) ≥ (a+b+c)²/(2a+2b+2c).
+          </div>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-jensen">
+          <div class="doc-tag">03 · convexity</div>
+          <h3>Jensen</h3>
+          <p>
+            If f is convex and λᵢ ≥ 0 with ∑λᵢ=1, then
+          </p>
+          <div class="formula big">
+            f(∑λᵢxᵢ) ≤ ∑λᵢf(xᵢ).
+          </div>
+          <p>
+            For equal weights,
+          </p>
+          <div class="formula">
+            f((x₁+⋯+xₙ)/n) ≤ (f(x₁)+⋯+f(xₙ))/n.
+          </div>
+          <h4>Common convex functions</h4>
+          <ul>
+            <li>x² on all real x.</li>
+            <li>eˣ on all real x.</li>
+            <li>−ln x on x&gt;0.</li>
+            <li>1/x on x&gt;0.</li>
+          </ul>
+          <h4>Equality</h4>
+          <p>
+            If f is strictly convex and all weights are positive,
+            equality requires x₁=⋯=xₙ.
+          </p>
+          <p class="afterthought">
+            Jensen is often just “convexity says the average behaves nicely.”
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-tangent">
+          <div class="doc-tag">04 · convexity</div>
+          <h3>Tangent line method</h3>
+          <p>
+            For a differentiable convex function f, every tangent line lies below
+            the graph:
+          </p>
+          <div class="formula big">
+            f(x) ≥ f(t) + f′(t)(x−t).
+          </div>
+          <p>
+            The useful trick is choosing t so the right side is simple.
+          </p>
+          <h4>Example</h4>
+          <div class="formula">
+            ln x ≤ x−1, &nbsp; x&gt;0.
+          </div>
+          <p>
+            This comes from the tangent to ln x at x=1:
+          </p>
+          <div class="formula">
+            ln x ≤ ln 1 + 1(x−1) = x−1.
+          </div>
+          <h4>Why it helps</h4>
+          <p>
+            If the target contains a complicated convex or concave function,
+            replace it by a linear expression that is easy to combine with the
+            rest of the inequality.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-support">
+          <div class="doc-tag">05 · convexity</div>
+          <h3>Supporting lines</h3>
+          <p>
+            Tangents are one way of building linear bounds. In general, a convex
+            function lies above its supporting lines and a concave function lies
+            below them.
+          </p>
+          <div class="formula">
+            f(x) ≥ f(t)+f′(t)(x−t) &nbsp; (convex)
+          </div>
+          <div class="formula">
+            f(x) ≤ f(t)+f′(t)(x−t) &nbsp; (concave)
+          </div>
+          <p>
+            The whole game is choosing t to match the equality case you want.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-uvw">
+          <div class="doc-tag">06 · symmetric</div>
+          <h3>uvw method</h3>
+          <p>
+            For three variables, set
+          </p>
+          <div class="formula big">
+            u=a+b+c, &nbsp; v=ab+bc+ca, &nbsp; w=abc.
+          </div>
+          <p>
+            These are the elementary symmetric polynomials. A symmetric
+            expression in a,b,c can often be rewritten using u,v,w.
+          </p>
+          <h4>Basic identities</h4>
+          <div class="formula">
+            a²+b²+c² = u²−2v
+          </div>
+          <div class="formula">
+            a³+b³+c³ = u³−3uv+3w
+          </div>
+          <div class="formula">
+            (a+b)(b+c)(c+a)=uv−w
+          </div>
+          <div class="formula">
+            (a−b)²+(b−c)²+(c−a)² = 2(u²−3v)
+          </div>
+          <h4>What people mean by “uvw”</h4>
+          <p>
+            Usually the inequality is symmetric or can be reduced to a
+            symmetric polynomial, and the expression becomes much easier to
+            study in u,v,w.
+          </p>
+          <p class="afterthought">
+            Don't treat uvw as a magic button. It is a change of variables that
+            exposes symmetry.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-uvw-degree">
+          <div class="doc-tag">07 · uvw</div>
+          <h3>Degree in w</h3>
+          <p>
+            A common reason uvw is effective is that, after fixing u and v,
+            a symmetric polynomial may have a low degree in w.
+          </p>
+          <p>
+            In many olympiad-style problems, the resulting expression is at most
+            quadratic in w. Then the problem can reduce to checking boundary
+            cases or special configurations.
+          </p>
+          <div class="formula">
+            F(a,b,c)=F(u,v,w).
+          </div>
+          <p>
+            The important point is not the slogan “two variables are equal.”
+            The actual reduction depends on the degree and the admissible
+            region for (u,v,w).
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-uvw-equal">
+          <div class="doc-tag">08 · uvw</div>
+          <h3>why b=c</h3>
+          <p>
+            In many symmetric three-variable inequality problems, fixing u and v
+            leaves the feasible w-values in an interval. If the target is linear
+            in w, its extremum occurs at an endpoint.
+          </p>
+          <p>
+            Those endpoints correspond to a repeated variable, so one often
+            checks b=c.
+          </p>
+          <p class="afterthought">
+            That's the useful heuristic. The hypotheses still matter.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-sos">
+          <div class="doc-tag">09 · algebra</div>
+          <h3>sum of squares</h3>
+          <p>
+            The easiest SOS patterns are worth knowing by sight.
+          </p>
+          <div class="formula">
+            a²+b²−2ab=(a−b)²
+          </div>
+          <div class="formula">
+            a²+b²+c²−ab−bc−ca
+            = 1/2[(a−b)²+(b−c)²+(c−a)²].
+          </div>
+          <div class="formula">
+            (a+b+c)²−3(ab+bc+ca)
+            = 1/2[(a−b)²+(b−c)²+(c−a)²].
+          </div>
+          <p>
+            When you need a nonnegative expression, try moving everything to one
+            side and looking for these shapes.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-schur">
+          <div class="doc-tag">10 · symmetric</div>
+          <h3>Schur</h3>
+          <p>
+            For a,b,c≥0 and r&gt;0,
+          </p>
+          <div class="formula big">
+            Σ aʳ(a−b)(a−c) ≥ 0.
+          </div>
+          <p>
+            The degree-1 case is
+          </p>
+          <div class="formula">
+            a(a−b)(a−c)+b(b−c)(b−a)+c(c−a)(c−b) ≥ 0.
+          </div>
+          <p>
+            One standard degree-1 rearrangement is
+          </p>
+          <div class="formula">
+            a(a−b)(a−c)+b(b−c)(b−a)+c(c−a)(c−b)
+            = Σa(a−b)(a−c).
+          </div>
+          <p class="afterthought">
+            Schur is especially useful when powers of a,b,c start climbing.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-rearrangement">
+          <div class="doc-tag">11 · ordering</div>
+          <h3>Rearrangement</h3>
+          <p>
+            If x₁≤⋯≤xₙ and y₁≤⋯≤yₙ, then
+          </p>
+          <div class="formula">
+            Σxᵢyᵢ
+            ≥
+            Σxᵢy_{n+1−i}.
+          </div>
+          <p>
+            Same-order pairing maximizes the dot product; opposite-order pairing
+            minimizes it.
+          </p>
+          <p>
+            It can be useful after sorting variables or identifying monotone
+            sequences.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-cheby">
+          <div class="doc-tag">12 · ordering</div>
+          <h3>Chebyshev</h3>
+          <p>
+            If x₁≤⋯≤xₙ and y₁≤⋯≤yₙ, then
+          </p>
+          <div class="formula">
+            (1/n)Σxᵢyᵢ ≥
+            [(1/n)Σxᵢ][(1/n)Σyᵢ].
+          </div>
+          <p>
+            It is basically a comparison between the average of products and the
+            product of averages for similarly ordered sequences.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-normalize">
+          <div class="doc-tag">13 · setup</div>
+          <h3>Normalization</h3>
+          <p>
+            If the inequality is homogeneous, scale the variables to simplify
+            one condition.
+          </p>
+          <div class="formula">
+            a+b+c=1
+          </div>
+          <div class="formula">
+            abc=1
+          </div>
+          <p>
+            The choice depends on the degree and the expression. Normalization
+            does not create information; it removes one redundant scale.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-homogenize">
+          <div class="doc-tag">14 · setup</div>
+          <h3>Homogenization</h3>
+          <p>
+            If different terms have different degrees, multiplying by a suitable
+            power of a+b+c can turn the problem homogeneous.
+          </p>
+          <p>
+            This matters because homogeneous inequalities can then be normalized
+            without changing the truth of the statement.
+          </p>
+          <div class="formula">
+            a²+b²+c² ≥ ab+bc+ca
+          </div>
+          <p class="afterthought">
+            First check whether the original problem is already homogeneous.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-smoothing">
+          <div class="doc-tag">15 · method</div>
+          <h3>Smoothing</h3>
+          <p>
+            Replace two variables by values with the same sum, often moving them
+            closer together, and compare the target.
+          </p>
+          <div class="formula">
+            x+y = const.
+          </div>
+          <p>
+            If the expression improves whenever x and y are averaged, repeated
+            smoothing pushes the extremum toward x=y.
+          </p>
+          <p>
+            This is one of the cleanest ways to understand why “set two
+            variables equal” sometimes appears in symmetric problems.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-tangent-example">
+          <div class="doc-tag">16 · tangent</div>
+          <h3>Picking the tangent point</h3>
+          <p>
+            The tangent point is usually chosen at the expected equality case.
+          </p>
+          <div class="formula">
+            √x ≤ (x+1)/2, &nbsp; x&gt;0.
+          </div>
+          <p>
+            This is the tangent/supporting-line inequality for √x at x=1.
+          </p>
+          <p>
+            If equality should happen at x=t instead, try writing the tangent
+            there first and simplify.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-log">
+          <div class="doc-tag">17 · tangent</div>
+          <h3>Useful tangent inequalities</h3>
+          <div class="formula">
+            ln x ≤ x−1, &nbsp; x&gt;0
+          </div>
+          <div class="formula">
+            eˣ ≥ 1+x, &nbsp; x∈ℝ
+          </div>
+          <div class="formula">
+            √x ≤ (x+1)/2, &nbsp; x&gt;0
+          </div>
+          <div class="formula">
+            1/x ≥ 2−x, &nbsp; x&gt;0
+          </div>
+          <p>
+            These are all tangent-line bounds at x=1.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-fraction">
+          <div class="doc-tag">18 · fractions</div>
+          <h3>Denominator tricks</h3>
+          <p>
+            For positive quantities, a few standard lower bounds show up a lot.
+          </p>
+          <div class="formula">
+            Σ a/(b+c)
+            ≥ (a+b+c)²/[2(a+b+c)]
+            = 1/2(a+b+c)
+          </div>
+          <p>
+            For the classic cyclic ratio
+            Σa/(b+c), Cauchy gives the sharper Nesbitt bound 3/2 after
+            the right setup.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-bern">
+          <div class="doc-tag">19 · calculus-free</div>
+          <h3>Bernoulli</h3>
+          <p>
+            For x&gt;−1 and integer n≥0,
+          </p>
+          <div class="formula">
+            (1+x)ⁿ ≥ 1+nx.
+          </div>
+          <p>
+            Equality occurs for x=0, and also trivially for n=0 or n=1 where
+            appropriate.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-mixing">
+          <div class="doc-tag">20 · method</div>
+          <h3>Mixing variables</h3>
+          <p>
+            Another way to attack a symmetric problem is to keep a+b fixed and
+            replace a,b by their average.
+          </p>
+          <div class="formula">
+            a+b=constant, &nbsp; a,b → (a+b)/2,(a+b)/2.
+          </div>
+          <p>
+            If the target is convex in the pair, the average may improve the
+            inequality. The sign has to be checked; don't assume it.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-pqr">
+          <div class="doc-tag">21 · symmetric</div>
+          <h3>pqr</h3>
+          <p>
+            A common three-variable notation is
+          </p>
+          <div class="formula">
+            p=a+b+c, &nbsp; q=ab+bc+ca, &nbsp; r=abc.
+          </div>
+          <p>
+            This is essentially the same symmetric data as u,v,w notation.
+            Different books use different letters.
+          </p>
+          <div class="formula">
+            a³+b³+c³ = p³−3pq+3r.
+          </div>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-equality">
+          <div class="doc-tag">22 · strategy</div>
+          <h3>equality first</h3>
+          <p>
+            Before trying to prove an inequality, guess where equality should
+            occur.
+          </p>
+          <p>
+            Then ask:
+          </p>
+          <ul>
+            <li>Do all variables become equal?</li>
+            <li>Does one variable become zero in a boundary case?</li>
+            <li>Does a repeated-variable case appear?</li>
+          </ul>
+          <p>
+            This often tells you which method to try and what tangent point or
+            normalization makes sense.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-homogeneous">
+          <div class="doc-tag">23 · strategy</div>
+          <h3>spot homogeneity</h3>
+          <p>
+            An expression is homogeneous if every term has the same total degree.
+          </p>
+          <div class="formula">
+            a²+b²+c² ≥ ab+bc+ca
+          </div>
+          <p>
+            Both sides have degree 2. That means scaling
+            (a,b,c)→(ta,tb,tc) scales both sides by t².
+          </p>
+          <p>
+            This is why conditions like a+b+c=1 can be imposed when the original
+            inequality is homogeneous.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-cyclic">
+          <div class="doc-tag">24 · warning</div>
+          <h3>symmetric vs cyclic</h3>
+          <p>
+            Don't call every cyclic-looking expression symmetric.
+          </p>
+          <p>
+            Symmetric means the value is unchanged under every permutation of
+            a,b,c. Cyclic only guarantees invariance under cyclic rotations.
+          </p>
+          <div class="formula">
+            Σcyc a²b = a²b+b²c+c²a
+          </div>
+          <p>
+            This is cyclic. It is not generally symmetric.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-reciprocal">
+          <div class="doc-tag">25 · useful</div>
+          <h3>reciprocal substitutions</h3>
+          <p>
+            If terms like 1/a, 1/b, 1/c keep showing up, sometimes replacing
+            a=x/y, b=y/z, c=z/x or scaling to abc=1 can expose the structure.
+          </p>
+          <p>
+            There is no universal substitution. Look at what the expression
+            becomes after the change before committing to it.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-amqm">
+          <div class="doc-tag">26 · means</div>
+          <h3>means worth knowing</h3>
+          <div class="formula">
+            AM ≥ GM ≥ HM
+          </div>
+          <p>
+            For positive x₁,…,xₙ,
+          </p>
+          <div class="formula">
+            (Σxᵢ)/n ≥ ⁿ√(∏xᵢ) ≥ n/(Σ1/xᵢ).
+          </div>
+          <p>
+            Equality throughout occurs when all xᵢ are equal.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-titu">
+          <div class="doc-tag">27 · cauchy</div>
+          <h3>Titu Andreescu's lemma</h3>
+          <p>
+            This is just Engel-form Cauchy written in the form I usually use:
+          </p>
+          <div class="formula big">
+            Σ xᵢ²/aᵢ ≥ (Σxᵢ)²/(Σaᵢ).
+          </div>
+          <p>
+            The denominators must be positive.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-logconvex">
+          <div class="doc-tag">28 · convexity</div>
+          <h3>log-convexity</h3>
+          <p>
+            A positive function f is log-convex when ln f is convex.
+          </p>
+          <p>
+            Equivalently, weighted geometric combinations satisfy the
+            corresponding interpolation inequality.
+          </p>
+          <div class="formula">
+            f(λx+(1−λ)y) ≤ f(x)^λ f(y)^(1−λ).
+          </div>
+          <p>
+            This shows up naturally around products and powers.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-derivative">
+          <div class="doc-tag">29 · one variable</div>
+          <h3>one-variable reduction</h3>
+          <p>
+            Sometimes a symmetric inequality reduces to one parameter after
+            setting b=c or using a normalization.
+          </p>
+          <p>
+            Then factorization, monotonicity, or a simple derivative can finish
+            the job.
+          </p>
+          <p class="afterthought">
+            Use this after exploiting the algebraic structure, not before.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-sos2">
+          <div class="doc-tag">30 · algebra</div>
+          <h3>common SOS pieces</h3>
+          <div class="formula">(x−y)² ≥ 0</div>
+          <div class="formula">(x+y)² ≥ 4xy</div>
+          <div class="formula">
+            x²+y²+z²−xy−yz−zx ≥ 0
+          </div>
+          <div class="formula">
+            x²+y² ≥ 2xy
+          </div>
+          <p>
+            These are basic, but a ridiculous number of proofs end here.
+          </p>
+        </article>
+
+        <article class="doc rainbow-border" id="doc-check">
+          <div class="doc-tag">31 · strategy</div>
+          <h3>my rough checklist</h3>
+          <ol>
+            <li>Check positivity.</li>
+            <li>Check homogeneity.</li>
+            <li>Find the equality case.</li>
+            <li>Try AM-GM / Cauchy.</li>
+            <li>Try a standard substitution.</li>
+            <li>For symmetric 3-variable problems, think uvw.</li>
+            <li>For convex functions, think Jensen or tangent line.</li>
+            <li>Move everything to one side and look for SOS.</li>
+          </ol>
+          <p class="afterthought">
+            If all of this fails, then yeah, maybe the problem is actually hard.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <p class="eyebrow">about</p>
+        <h2><span class="rainbow-text" data-rainbow>imnoob123</span></h2>
+      </div>
+
+      <p>
+        I'm a student. I like inequalities. I put the stuff I find useful here.
+        That's basically the site.
+      </p>
+
+      <div class="signature">
+        <span class="rainbow-text" data-rainbow>∴ your turn.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 imnoob123</span>
+    <span>/</span>
+    <span class="rainbow-text" data-rainbow>keep the proof short</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
